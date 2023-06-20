@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/inputmask@5.0.6/dist/inputmask.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/inputmask/dist/jquery.inputmask.min.js"></script>
+  <script src="https://unpkg.com/imask"></script>
+  <link rel="stylesheet" href="./style.css">
+  <title>Agenda de Contatos</title>
+</head>
+<body>
+  <div class="page">
+    <header>
+      <img src="./images/logo.png" alt="Icone de agenda de contatos">
+      <h1>Agenda de Contatos</h1>
+    </header>
+    <main>
+      <form id="contact-form">
+        <input type="text" id="name-input" placeholder="Nome do contato" required>
+        <input type="tel" id="phone-input" placeholder="Telefone" required>
+        <button type="submit" id="btn=save-contact">Adicionar Contato</button>
+      </form> 
+      <table cellspacing="0" class="contact-table">
+        <thead>
+          <tr>
+            <th>Nome do Contato</th>
+            <th>Telefone</th>
+            <th></th>
+          </tr>
+        </thead>
+        <tbody>
+        </tbody>
+      </table>
+    </main>
+  </div>
+    <script src="main.js"></script>
+</body>
+</html>
